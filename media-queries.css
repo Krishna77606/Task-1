@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+
+    .image-grid {
+        width: 100%;
+    }
+
+    .lefthalf {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .righthalf {
+        width: 100%;
+    }
+}
