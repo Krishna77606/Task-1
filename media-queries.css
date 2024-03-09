@@ -1,34 +1,87 @@
-@media screen and (max-width: 768px) {
-    nav ul {
-        display: none;
-    }
+/* Common styles */
 
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
     .hamburger-menu {
-        display: block;
+      display: block;
     }
-
+  
     nav {
-        justify-content: space-between;
+      justify-content: flex-end;
     }
-
-    .text-container {
-        width: 100%;
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
     }
-
-    .info-box {
-        width: 100%;
+  
+    .dropdown-content a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: black;
     }
-
-    .image-grid {
-        width: 100%;
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
-
-    .lefthalf {
-        width: 100%;
-        margin-right: 0;
+  
+    main {
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
     }
-
+  
+    .text-container,
+    .main-image-container {
+      width: 100%;
+      max-width: 100%;
+      order: 1;
+    }
+  
+    .lefthalf,
     .righthalf {
-        width: 100%;
+      width: 100%;
     }
-}
+  }
+  
+  @media screen and (max-width: 320px) {
+    .menu {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and (min-width: 321px) and (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    button {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .text-container {
+      font-size: 14px; /* Decrease font size for smaller screens */
+    }
+  }
