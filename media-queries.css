@@ -41,7 +41,7 @@
       flex-direction: column;
   }
 
-  .text-container {
+  .text-container, .text-container1 {
     padding: 10px; /* Reduce padding for smaller screens */
     flex: 0 1 auto; 
     word-wrap: break-word;
@@ -76,7 +76,7 @@
       padding: 10px; /* Adjust padding for buttons */
   }
 
-  .text-container {
+  .text-container,.text-container1  {
       font-size: 5px; /* Decrease font size for smaller screens */
   }
 }
